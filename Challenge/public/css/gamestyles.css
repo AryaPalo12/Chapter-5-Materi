@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Poppins:400,500,700,800");
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin : 0;
+    background-color: #9C835F; 
+    font-family : "Open Sans", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin: 30px 0 0 30px;
+}
+
+.bold-brown {
+    font-size: 2.5em;
+    color : #3d2c13;
+    place-items : center;
+    font-weight:700;
+}
+
+.bold-brown:hover {
+    transform: scale(1.5);
+    background : rgba(255, 255, 255, 0.5);
+    border-radius : 40%;
+}
+
+#logo {
+    display : flex;
+    flex-direction : row;
+    width : 40%;
+    margin-left : 20px;
+    font-size : 1em;
+}
+
+.logo-smaller {
+    max-width : 50px;
+    max-height: 50px;
+    margin-top : 10px;
+}
+
+#RPS{
+    color: #F0AD4E;
+    margin-left : 20px;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+}
+
+.resize {
+    padding : 30px;
+    max-width : 100px;
+    max-height : 100px;
+}
+
+#control-screen {
+    display : flex;
+    width :50%;
+    margin : auto;
+    justify-content: center;
+
+}
+
+#playerButton,#refreshVs,#comButton  {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin:auto;
+}
+
+.name-tag {
+    font-family : Arial, Arial, Helvetica, sans-serif;
+    font-size : 30px;
+    font-weight: bold;
+}
+
+.spacing {
+    padding-bottom:10vh;
+}
+
+.vs {
+    color:#BD0000;
+    font-size : 90px;
+    font-weight: bold;
+    font-family : Arial, Helvetica, sans-serif;
+    margin-top : 30vh;
+    margin-bottom : 20vh;
+}
+
+.refresh{
+    max-width: 60px;
+    max-height: 60px;
+    cursor: pointer;
+}
+
+.container{
+    border-radius : 10px;
+    margin : 10px;
+    min-width: 100px;
+    min-height: 100px;
+    max-height : 150px;
+    max-width: 150px;
+}
+
+button {
+    background-color: transparent;
+    border-color : transparent;
+
+}
+
+.user_button{
+    pointer-events:none;
+}
+
+.animate-button{
+    cursor: pointer;
+}
+
+.animate-button:hover {
+    transform: rotate(20deg);
+    animation-name: animateControl;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.3, 0.4,0.5, 1.6);
+    animation-iteration-count: infinite;
+}@keyframes animateControl {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(45deg);
+    }
+    75% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.refresh-button:hover {
+    animation-name: animateRefresh;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.3, 0.5,0.7, 1);
+    animation-iteration-count: 2;
+}@keyframes animateRefresh {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.picked{
+    background-color : rgba(255, 255, 255, 0.5);
+}
+
+.vsAnimation {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background : rgb(52, 128, 52);
+    font-size : 36px;
+    min-height: 100px;
+    max-height : 150px;
+    min-width : 150px;
+    max-width : 180px;
+    transform : rotate(315deg);
+    color : white !important;
+    border-radius : 10px;
+    animation-name : vsLaunch;
+    animation-duration : 0.5s;
+    animation-timing-function: cubic-bezier(0.3, 0.5,0.7, 1);
+}@keyframes vsLaunch {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(315deg);
+    }
+
+}
+
+.green{
+    background-color : rgb(6, 83, 6) !important;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/gamestyles.css">
+        <title>Rock Paper Scissor</title>
+        <script src="/scripts/script.js" defer></script>
+    </head>
+    <body>
+        <section id="game">
+            <!-- The upper button -->
+            <header>
+                <div>
+                    <a href="/"><h1 class="bold-brown">&lt</h1></a> 
+                </div>
+                <div id="logo">
+                    <img src="./assets/logo.png" class="logo-smaller" alt="logo">
+                    <h1 id="RPS">ROCK PAPER SCISSOR</h1>
+                </div>
+            </header>
+            <!--This one shows the player and computer control-->
+            <div id="control-screen">
+                <div id="playerButton">
+                    <div class="name-tag">PLAYER 1</div>
+                    <button id="batu-p" class="container control-button control" value ="batu"><img src ="./assets/batu.png" class="resize user_button"></button>
+                    <button id="kertas-p" class="container control-button control" value="kertas"><img src="./assets/kertas.png" class="resize user_button"></button>
+                    <button id="gunting-p" class="container control-button control" value="gunting"><img src="./assets/gunting.png" class="resize user_button"></button>
+                </div>
+            <!-- This section shows the VS button and will change according to the result-->
+            <div id="refreshVs">
+                <div class="spacing"></div>
+                <div class="vs"></div>
+                <div id="refresh" class="refresh-button"><img src="./assets/refresh.png" class="resize refresh"></div>
+            </div>
+            <!-- This does not sparks joy and dont animate anything-->
+            <div id="comButton">
+                <div class="name-tag">COM</div>
+                <div id="batu-c" class="container comButton"><img src ="/assets/batu.png" class="resize"></div>
+                <div id="kertas-c" class="container comButton"><img src="/assets/kertas.png" class="resize"></div>
+                <div id="gunting-c" class="container comButton"><img src="/assets/gunting.png" class="resize"></div>
+            </div>
+        </section>
+    </body>
+</html>
